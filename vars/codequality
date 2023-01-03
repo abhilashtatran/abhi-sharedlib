@@ -1,0 +1,3 @@
+def call () {
+        recordIssues(tools: [pmdParser(pattern: '**/pmd.xml')])
+        }
