@@ -6,6 +6,6 @@
 //   dependencyCheckPublisher pattern: ''
 // }
 def call () {
-  sh 'dependencyCheck additionalArguments: '', odcInstallation: "Dependency-check"'
+  sh "dependencyCheck additionalArguments: '', odcInstallation: 'Dependency-check'"
   dependencyCheckPublisher pattern: ''
 }
