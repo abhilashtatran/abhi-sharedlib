@@ -5,7 +5,7 @@
 //   sh "dependencyCheck additionalArguments: '', ${name}"
 //   dependencyCheckPublisher pattern: ''
 // }
-def any () {
+def call () {
   dependencyCheck additionalArguments: '', odcInstallation: 'Dependency-check'
   dependencyCheckPublisher pattern: ''
 }
