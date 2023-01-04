@@ -1,4 +1,4 @@
-def depCheck(Map stepParams){
+def call (Map stepParams){
   name="${stepParams.name}"
   "dependencyCheck additionalArguments: '', odcInstallation: ${name}"
   dependencyCheckPublisher pattern: ''
