@@ -1,5 +1,6 @@
 def dependencyCheck(Map stepParams){
   name="${stepParams.name}"
-  depCheck additionalArguments: '', odcInstallation: "${name}"
-                dependencyCheckPublisher pattern: ''
+//   depCheck additionalArguments: '', odcInstallation: "${name}"
+//                 dependencyCheckPublisher pattern: ''
+  echo "${name}"
 }
