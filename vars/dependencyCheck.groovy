@@ -1,7 +1,11 @@
-def depCheck (Map stepParams) {
-  name="${stepParams.name}"
-//   sh 'mvn org.owasp:dependency-check-maven:7.4.3:check'
+// def depCheck (Map stepParams) {
+//   name="${stepParams.name}"
+// //   sh 'mvn org.owasp:dependency-check-maven:7.4.3:check'
   
-  sh "dependencyCheck additionalArguments: '', ${name}"
+//   sh "dependencyCheck additionalArguments: '', ${name}"
+//   dependencyCheckPublisher pattern: ''
+// }
+def call () {
+  sh 'dependencyCheck additionalArguments: '', odcInstallation: "Dependency-check"'
   dependencyCheckPublisher pattern: ''
 }
